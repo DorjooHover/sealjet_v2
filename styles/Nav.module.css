@@ -1,0 +1,131 @@
+.nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_img {
+  width: 120px;
+  height: auto;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav ul li {
+  color: #1d1c1c;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 40px;
+}
+
+.nav ul li .active {
+  border-bottom: 3px solid #41d48c;
+  padding-bottom: 15px;
+}
+
+.nav .hamburger {
+  display: none;
+}
+
+.nav .hamburger i {
+  font-size: 25px;
+}
+
+.nav label {
+  display: none;
+}
+
+.nav form {
+  width: 300px;
+  position: relative;
+}
+
+.nav form input {
+  width: 100%;
+  background-color: #e5e5e5;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 8px;
+  font-size: 20px;
+}
+
+.nav form span {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #41d48c;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.nav form span i {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1260px) {
+  .nav {
+    background-color: #dedede;
+  }
+  .nav ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav {
+    padding: 10px 30px;
+  }
+  .nav form .search {
+    display: none;
+  }
+  .nav form span {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .nav form .search {
+    display: none;
+  }
+  .nav form span {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */
